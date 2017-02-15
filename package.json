@@ -1,0 +1,49 @@
+{
+  "name": "maxmin-filter",
+  "version": "1.0.0",
+  "description": "Max-Min filter of image",
+  "main": "lib/maxmin_filter.js",
+  "browser": "shims/maxmin_filter.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "zeros": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "get-pixels": "^3.3.0",
+    "save-pixels": "^2.3.4",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build:shim": "babel -d shims lib",
+    "build:demo": "webpack --config webpack.config.demo.js",
+    "prepare": "npm run build:shim && npm run build:demo"
+  },
+  "repository": "fujiharuka/node-maxmin-filter",
+  "keywords": [
+    "filter",
+    "max-min filter"
+    "ndarray",
+    "image"
+  ],
+  "author": {
+    "name": "Fuji Haruka",
+    "email": "fizzyjohn316@gmail.com",
+    "url": "https://github.com/FujiHaruka"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fujiharuka/node-maxmin-filter/issues"
+  },
+  "homepage": "https://github.com/fujiharuka/node-maxmin-filter#readme",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Max-Min Filter Demo</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+    <style>
+      html, body {
+        margin: 0;
+        color: #666;
+      }
+      .demo-body-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+      .demo-body {
+        max-width: 660px;
+        width: 100%;
+        padding: 0 10px;
+      }
+      h1 {
+        font-weight: 100;
+      }
+      .button-xlarge {
+        font-size: 150%;
+      }
+    </style>
+    <script src="demo.bundle.js"></script>
+  </head>
+  <body>
+    <div class="demo-body-wrap">
+      <div class="demo-body">
+        <h1>Max-Min Filter Demo</h1>
+        <form class="pure-form pure-form-aligned">
+          <fieldset>
+            <div class="pure-control-group">
+              <label for="option-size">Filter Size</label>
+              <input id="option-size" type="number" max="15" min="3" step="2" value="3"/>
+            </div>
+            <div class="pure-controls">
+              <button class="button-xlarge pure-button pure-button-primary" id="filter-button">Filter</button>
+            </div>
+          </fieldset>
+        </form>
+        <div id="canvas-wrap"></div>
+      </div>
+    </div>
+  </body>
+</html>
