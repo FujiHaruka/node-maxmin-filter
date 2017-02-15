@@ -28,7 +28,7 @@
   "repository": "fujiharuka/node-maxmin-filter",
   "keywords": [
     "filter",
-    "max-min filter"
+    "max-min filter",
     "ndarray",
     "image"
   ],
