@@ -1,6 +1,6 @@
 {
   "name": "maxmin-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Max-Min filter of image",
   "main": "lib/maxmin_filter.js",
   "browser": "shims/maxmin_filter.js",
