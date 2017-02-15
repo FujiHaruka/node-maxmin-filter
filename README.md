@@ -14,8 +14,6 @@ $ npm install maxmin-filter
 
 I made it as an [ndarray](https://github.com/scijs/ndarray) module. So, the simplest usage is with [get-pixels](https://github.com/scijs/get-pixels) and [save-pixels](https://github.com/scijs/save-pixels) as below.
 
-See [examples]('./examples') for more.
-
 ```js
 const fs = require('fs')
 const savePixels = require('save-pixels')
@@ -30,3 +28,12 @@ getPixels('src.png', (err, pixels) => {
   savePixels(filtered, 'png').pipe(fs.createWriteStream('dist.png'))
 })
 ```
+
+## API
+
+### `maxminFilter(pixels[, options])`
+
+Returns a thresholded ndarray.
+
+* `pixels` - an ndarray whose shape is [width, height, channels].
+* `options.size` - the filter size.
